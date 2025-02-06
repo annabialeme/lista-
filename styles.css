@@ -1,0 +1,16 @@
+* {
+    background-color: rgb(141, 12, 201);
+}
+
+.article {
+    flex: 3;
+    background-color: rgb(106, 240, 72);
+    padding: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.title {
+    background-color: rgb(106, 240, 72);
+
+}
