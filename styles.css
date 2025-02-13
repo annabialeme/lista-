@@ -1,21 +1,20 @@
-* {
-    background-color: rgb(141, 12, 201);
-}
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
+    background-color: rgba(141, 12, 201);
 } 
 
 .container {
     background: rgb(12, 212, 12);
-    padding: 50px;
-    width: 100%;
+    padding: 100px;
+    width: 500%;
     text-align: center;
     transition: transform 0.2 ease-in-out;
-    border-radius: 20px;
+    border-radius: 30px;
+    max-width: 300px;
 }
 
 h1 {
@@ -45,7 +44,7 @@ button {
 }
 
 button:hover {
-    background-color: blueviolet;
+    background-color: rgb(190, 178, 201);
 }
 
 #taskList {
@@ -56,7 +55,7 @@ button:hover {
 .task {
     display: flex;
     transition: transform 0.2s;
-    padding: 20px;
+    padding: 5px;
     background-color: white;
     align-items: center;
     justify-content: space-between;
@@ -67,8 +66,18 @@ button:hover {
 }
 
 .task button {
-    background: black;
+    background: rgb(221, 137, 224);
     padding: 5px;
     cursor: pointer;
     transition: 0.3s;
+}
+
+input[type="name"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
