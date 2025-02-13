@@ -1,37 +1,36 @@
-let task = [];
+let tasks = []; 
 
-function click() {
-    let task = document.getElementById("task");
-    let texto = task.ariaValueMax.trim();
+function addTask() {
+    let taskInput = document.getElementById("taskInput");
+    let taskText = taskInput.value.trim();
 
-    if (texto === "") {
-        alert ("Atenção, digite uma tarefa");
+    if (taskText === "") {
+        alert("Digite aqui");
         return;
     }
 
-    task.push(texto);
-    task.value = "";
+    tasks.push(taskText); 
+    taskInput.value = ""; 
 
-    updateLista();
+    updateTaskList(); 
 }
 
 function removeTask(index) {
-    task.splice(index, 1);
-    updateLista();
+    tasks.splice(index, 1); 
+    updateTaskList(); 
 }
 
-function updateLista() {
-    let Lista = document.getElementById("Lista");
-    Lista.innerHTML = "";
+function updateTaskList() {
+    let taskList = document.getElementById("taskList");
+    taskList.innerHTML = ""; 
 
-    task.forEach((task, index) => {
+    tasks.forEach((task, index) => {
         let taskDiv = document.createElement("div");
         taskDiv.className = "task";
         taskDiv.innerHTML = `
-        <span>${task}</span>
-        <button onclick = "removeTask(${index})">Remover</button>
+            <span>${task}</span>
+            <button onclick="removeTask(${index})">Remove</button>
         `;
-        Lista.appendChild(taskDiv);
+        taskList.appendChild(taskDiv);
     });
 }
-

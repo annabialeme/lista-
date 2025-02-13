@@ -1,9 +1,13 @@
 * {
     background-color: rgb(141, 12, 201);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
 
 .container {
     background: rgb(12, 212, 12);
@@ -11,6 +15,7 @@
     width: 100%;
     text-align: center;
     transition: transform 0.2 ease-in-out;
+    border-radius: 20px;
 }
 
 h1 {
@@ -43,12 +48,12 @@ button:hover {
     background-color: blueviolet;
 }
 
-#Lista {
+#taskList {
     display: flex;
     flex-direction: column;
 }
 
-.Lista {
+.task {
     display: flex;
     transition: transform 0.2s;
     padding: 20px;
@@ -57,11 +62,11 @@ button:hover {
     justify-content: space-between;
 }
 
-.Lista:hover {
+.task:hover {
     transform: scale(1.03);
 }
 
-.Lista button {
+.task button {
     background: black;
     padding: 5px;
     cursor: pointer;
