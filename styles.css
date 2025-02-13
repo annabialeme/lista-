@@ -1,16 +1,69 @@
 * {
     background-color: rgb(141, 12, 201);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.article {
-    flex: 3;
-    background-color: rgb(106, 240, 72);
-    padding: 200px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+.container {
+    background: rgb(12, 212, 12);
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2 ease-in-out;
 }
 
-.title {
-    background-color: rgb(106, 240, 72);
+h1 {
+    background-color: rgb(12, 212, 12);
+    margin-bottom: 40px;
+}
 
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    outline: none;
+    padding: 6px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+button {
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista {
+    display: flex;
+    transition: transform 0.2s;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista:hover {
+    transform: scale(1.03);
+}
+
+.lista button {
+    background: black;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
