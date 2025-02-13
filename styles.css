@@ -43,12 +43,12 @@ button:hover {
     background-color: blueviolet;
 }
 
-#lista {
+#Lista {
     display: flex;
     flex-direction: column;
 }
 
-.lista {
+.Lista {
     display: flex;
     transition: transform 0.2s;
     padding: 20px;
@@ -57,11 +57,11 @@ button:hover {
     justify-content: space-between;
 }
 
-.lista:hover {
+.Lista:hover {
     transform: scale(1.03);
 }
 
-.lista button {
+.Lista button {
     background: black;
     padding: 5px;
     cursor: pointer;
